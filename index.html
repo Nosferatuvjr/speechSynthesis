@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="@rbmelolima" />
+  <meta name="description" content="Leitor online" />
+  <title>SpeechSynthesis</title>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Reprodutor de som online</h1>
+  </header>
+
+  <main>
+    <section>
+      <form action="">
+        <textarea name="text" id="text" placeholder="Insira seu texto aqui para ser reproduzido. Aumente o volume :)"
+          oninput="setText(event)"></textarea>
+
+        <button class="btn-reset waves-effect grey lighten-5" type="reset" onclick="clean()"> CLEAN </button>
+      </form>
+
+      <div class="group-button">
+        <button class="waves-effect deep-purple darken-4 btn-large" onclick="play()"> PLAY</button>
+        <button class="waves-effect deep-purple lighten-1 btn-large" onclick="pause()">PAUSE</button>
+        <button class="waves-effect deep-purple lighten-4 btn-large" onclick="stop()">STOP</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
